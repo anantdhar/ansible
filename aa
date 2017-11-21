@@ -1,0 +1,628 @@
+    1  ansible all --list-hosts
+    2  ansible all -m ping -v
+    3  ansible --version
+    4  pip install --upgrade ansible
+    5  yum install pip
+    6  cat /etc/hosts
+    7  export GUID=`hostname | awk -F"." '{print $2}'`
+    8  ssh app1.c47f.internal
+    9  cat /etc/ansible/hosts 
+   10  pwd
+   11  df -h
+   12  ls
+   13  cd ..
+   14  ls
+   15  cd 
+   16  ls
+   17  mkdir Git-bad
+   18  cd Git-bad/
+   19  ls
+   20  git clone https://github.com/tonykay/bad-ansible.git
+   21  ls
+   22  cd bad-ansible/
+   23  ls
+   24  cd ..
+   25  ls
+   26  cd ..
+   27  la
+   28  ls
+   29  mv Git-bad/ Git
+   30  ls
+   31  cd Git/
+   32  ls
+   33  cd bad-ansible/
+   34  ls
+   35  cd 3tier-bad/
+   36  ls
+   37  cd ..
+   38  ls
+   39  echo $GUID
+   40  ansible-playbook bad-ansible/3tier-bad/bad-playbook.yml -e "GUID=${GUID}"
+   41  cd bad-ansible/
+   42  ls
+   43  cd 3tier-bad/
+   44  ls
+   45  less bad-playbook.yml
+   46  vi bad-playbook.
+   47  vi bad-playbook.yml 
+   48  clear
+   49  ansible-playbook bad-ansible/3tier-bad/bad-playbook.yml -e "GUID=${GUID}"
+   50  cd ../..
+   51  ansible-playbook bad-ansible/3tier-bad/bad-playbook.yml -e "GUID=${GUID}"
+   52  ls
+   53  ll
+   54  ansible-playbook /root/Git/bad-ansible/3tier-bad/bad-playbook.yml -e "GUID=${GUID}"
+   55  cd bad-ansible/3tier-bad/ls
+   56  ls
+   57  cd bad-ansible/
+   58  ls
+   59  cd 3tier-bad/
+   60  ls
+   61  less bad-playbook.yml
+   62  cd ..
+   63  ls
+   64  cd ..
+   65  ls
+   66  pwd
+   67  cp /etc/yum.repos.d/open_three-tier-app.repo bad-ansible/3tier-bad/
+   68  ansible-playbook /root/Git/bad-ansible/3tier-bad/bad-playbook.yml -e "GUID=${GUID}"
+   69  ls
+   70  cd bad-ansible/
+   71  ls
+   72  cd 3tier-bad/
+   73  ls
+   74  less bad
+   75  less bad-playbook.yml 
+   76  less bad-playbook.retry 
+   77  cat /etc/ansible/hosts 
+   78  less bad-playbook.yml 
+   79  cat /etc/ansible/hosts 
+   80  less bad-playbook.yml 
+   81  ls
+   82  cat ansible.cfg
+   83  ls
+   84  cd roles/
+   85  ls
+   86  cd cleaner/
+   87  ls
+   88  cd tasks/
+   89  ls
+   90  cat main.yml 
+   91  ls
+   92  cd ..
+   93  ls
+   94  cd ..
+   95  ls
+   96  cd ..
+   97  ls
+   98  cat hosts 
+   99  s
+  100  ls
+  101  cat bad-playbook.retry 
+  102  cat index.html.j2 
+  103  ls
+  104  cat cleanup.yml 
+  105  vi good-playbook.yaml
+  106  cat bad-playbook.retry 
+  107  less bad-playbook.yml 
+  108  cat cleanup.yml 
+  109  cat roles/cleaner/tasks/main.yml 
+  110  cd ..
+  111  ls
+  112  cd ../..
+  113  ls
+  114  cd Git/
+  115  ls
+  116  git clone https://github.com/anantdhar/ansible.git
+  117  ls
+  118  cd ansible/
+  119  ls
+  120  mkdir good-playbooks
+  121  cd good-playbooks/
+  122  ls
+  123  ansible-galaxy init base-config
+  124  ls
+  125  cd base-config/
+  126  ll
+  127  cd ../..
+  128  cd ..
+  129  ls
+  130  cd bad-ansible/
+  131  ls
+  132  cd 3tier-bad/
+  133  ls
+  134  less bad-playbook.yml 
+  135  cd -
+  136  cd ..
+  137  ls
+  138  cd ansible/good-playbooks/
+  139  ls
+  140  cd base-config/tasks/
+  141  ls
+  142  vi main.yml 
+  143  ls
+  144  cd ..
+  145  ls
+  146  cd templates/
+  147  ls
+  148  pwd
+  149  cp /root/Git/bad-ansible/3tier-bad/open_three-tier-app.repo .
+  150  ls
+  151  ll
+  152  cd ../tasks/
+  153  ls
+  154  vi main.yml 
+  155  cd ../..
+  156  ls
+  157  pwd
+  158  mkdir roles
+  159  ls
+  160  mv base-config/ roles/
+  161  ls
+  162  cd roles/
+  163  ls
+  164  cd base-config/
+  165  ls
+  166  cd ..
+  167  ls
+  168  cd ..
+  169  ls
+  170  vi site.yml
+  171  pwd
+  172  ls
+  173  ansible-playbook site.yml --syntax-check
+  174  vi roles/base-config/tasks/main.yml 
+  175  ansible-playbook site.yml --syntax-check
+  176  ansible-playbook site.yml --check
+  177  vi site.yml
+  178  ansible-playbook site.yml
+  179  cd ..
+  180  ls
+  181  cd bad-ansible/
+  182  ls
+  183  cd 3tier-bad/
+  184  ls
+  185  ansible-playbook cleanup.yml 
+  186  echo $GUID
+  187  ansible-playbook cleanup.yml -e GUID=${GUID}
+  188  ssh app1.c47f.internal 
+  189  echo $GUID
+  190  ansible-playbook cleanup.yml -e GUID=${GUID} -vvvv
+  191  https://github.com/tonykay/bad-ansible
+  192  ss
+  193  cd
+  194  ansible-playbook Git/bad-ansible/3tier-bad/cleanup.yml -e GUID=${GUID}
+  195  cd Git/ansible/good-playbooks/
+  196  ls
+  197  ansible-playbook site.yml 
+  198  pwd
+  199  ls
+  200  d rol
+  201  cd roles/
+  202  ls
+  203  mkdir app-server
+  204  ls
+  205  ansible-galaxy init app-server/
+  206  cd app-server/
+  207  ls
+  208  cd ..
+  209  ls
+  210  cd base-config/
+  211  ls
+  212  cd ..
+  213  ansible-galaxy init app-server
+  214  ansible-galaxy init app-server --force
+  215  ls
+  216  cd app-server/
+  217  ls
+  218  cd tasks/
+  219  ls
+  220  vi main.yml 
+  221  cat main.yml 
+  222  cd ..
+  223  ls
+  224  cd ..
+  225  ls
+  226  cd app-server/
+  227  ls
+  228  cd ../..
+  229  ls
+  230  vi site.yml 
+  231  cd roles/
+  232  ls
+  233  cd app-server/
+  234  ls
+  235  cd tasks/
+  236  ls
+  237  vi main.yml 
+  238  ls
+  239  vi main.yml 
+  240  cd ..
+  241  ls
+  242  cd ..
+  243  ls
+  244  pwd
+  245  cd ..ls
+  246  cd ..
+  247  ls
+  248  cat site.yml 
+  249  pwd
+  250  ls
+  251  cd roles/
+  252  ls
+  253  cd nas
+  254  cd base-config/
+  255  ls
+  256  cd templates/
+  257  ls
+  258  cd ../..
+  259  cd ..
+  260  ls
+  261  cd 
+  262  pwd
+  263  cd -
+  264  ls
+  265  cd roles/
+  266  ls
+  267  cd app-server/
+  268  ls
+  269  ls
+  270  vi main.yml 
+  271  cd ..
+  272  ls
+  273  cd ..
+  274  ls
+  275  mkdir haproxy
+  276  ansible-galaxy init haproxy
+  277  ansible-galaxy init haproxy --force
+  278  cd haproxy/
+  279  ls
+  280  cd tasks/
+  281  ls
+  282  vi main.yml 
+  283  ls
+  284  cd ../templates/
+  285  ls
+  286  cp /root/Git/bad-ansible/3tier-bad/haproxy.cfg.j2 .
+  287  ls
+  288  cd ../tasks/
+  289  vi main.yml 
+  290  cd ..
+  291  ls
+  292  cd ..
+  293  ls
+  294  cd ..
+  295  ls
+  296  ansible-playbook site.yml 
+  297  ls
+  298  vi site.yml 
+  299  ansible-playbook site.yml
+  300  ls
+  301  vi site.yml 
+  302  ansible-playbook site.yml --syntax-check
+  303  ansible-playbook site.yml --check
+  304  ansible-playbook site.yml 
+  305  ls
+  306  cd roles/
+  307  ls
+  308  cd app-server/
+  309  ls
+  310  cd tasks/
+  311  ls
+  312  cat main.yml 
+  313  ls
+  314  pwd
+  315  cd ../..
+  316  ls
+  317  cd ..
+  318  ls
+  319  vi site.yml 
+  320  ansible-playbook site.yml --syntax-check
+  321  vi site.yml 
+  322  cd roles/haproxy/tasks/
+  323  ls
+  324  vi main.yml 
+  325  cd ../..
+  326  ls
+  327  cd ..
+  328  ls
+  329  ansible-playbook site.yml --syntax-check
+  330  ansible-playbook site.yml --check
+  331  ls
+  332  cat site.retry 
+  333  ls
+  334  cd roles/
+  335  ls
+  336  cd haproxy/
+  337  ls
+  338  cd templates/
+  339  ls
+  340  ll
+  341  cd ../..
+  342  ls
+  343  cd app-server/
+  344  ls
+  345  cd templates/
+  346  ls
+  347  cd ..
+  348  cd ../base-config/
+  349  ls
+  350  cd templates/
+  351  ls
+  352  cd ../..
+  353  ls
+  354  cd ..
+  355  ls
+  356  rm site.retry 
+  357  clear
+  358  ansible-playbook site.yml --check
+  359  ls
+  360  cd roles/haproxy/templates/
+  361  ls
+  362  cat haproxy.cfg.j2 
+  363  cd ..
+  364  ll
+  365  cd ..
+  366  ll
+  367  cd ..
+  368  ll
+  369  pwd
+  370  ls
+  371  cd ..
+  372  ls
+  373  cd ..
+  374  ls
+  375  cd ansible/
+  376  ls
+  377  git add
+  378  git add .
+  379  git commit -m "first commit"
+  380  git pust
+  381  git push
+  382  git add .
+  383  git commit -m "first commit"
+  384  git push
+  385  git init
+  386  git commit -m "first commit"
+  387  git remote add origin https://github.com/anantdhar/ansible.git
+  388  git push -u origin master
+  389  ls
+  390  cd good-playbooks/
+  391  ls
+  392  cat site.yml 
+  393  ls
+  394  cd roles/
+  395  ls
+  396  cd haproxy/
+  397  ls
+  398  cd tasks/
+  399  ls
+  400  cat main.yml 
+  401  ls
+  402  pwd
+  403  ls
+  404  vi main.yml 
+  405  ls
+  406  cd ..
+  407  ls
+  408  cd handlers/
+  409  ls
+  410  vi main.yml 
+  411  cd ../..
+  412  cd ..
+  413  ls
+  414  ansible-playbook site.yml --syntax-check
+  415  vi site.
+  416  vi site.yml 
+  417  ansible-playbook site.yml --check
+  418  ll
+  419  ls
+  420  cd roles/
+  421  ls
+  422  cd haproxy/
+  423  ls
+  424  cd tasks/
+  425  cd ../templates/
+  426  ls
+  427  vi haproxy.cfg.j2 
+  428  cd ../..
+  429  ls
+  430  cd ..
+  431  ls
+  432  ansible-playbook site.yml --check
+  433  ls
+  434  cd roles/
+  435  ls
+  436  cd haproxy/
+  437  ls
+  438  cd tasks/
+  439  ls
+  440  cat main.yml 
+  441  cd ../handlers/
+  442  ls
+  443  cat main.yml 
+  444  cd ../tasks/
+  445  ls
+  446  cat main.yml 
+  447  cd Git/
+  448  ls
+  449  cd ansible/
+  450  ls
+  451  cd good-playbooks/
+  452  ls
+  453  cd roles/
+  454  ls
+  455  cd base-config/
+  456  ls
+  457  cd tasks/
+  458  ls
+  459  cat main.yml 
+  460  pwd
+  461  cd ../..
+  462  ls
+  463  cd ../..
+  464  ls
+  465  cd ..
+  466  ls
+  467  cd bad-ansible/
+  468  ls
+  469  cd 3tier-bad/
+  470  ls
+  471  less bad-playbook.yml 
+  472  ls
+  473  cd Git/
+  474  ls
+  475  cd ansible/
+  476  ls
+  477  cd 
+  478  cd -
+  479  cd good-playbooks/
+  480  ls
+  481  cd roles/
+  482  ls
+  483  ansible-galaxy init postgresql
+  484  ls
+  485  cd postgresql/
+  486  ls
+  487  cd ..
+  488  ls
+  489  cd app-server/
+  490  cd tasks/
+  491  ls
+  492  cat main.yml 
+  493  cd ../../postgresql/tasks/
+  494  vi main.yml 
+  495  cd ..
+  496  ls
+  497  cd ..
+  498  ls
+  499  cd base-config/
+  500  ls
+  501  cd tasks/
+  502  ls
+  503  cat main.yml 
+  504  cd ..
+  505  ls
+  506  cd ..
+  507  ls
+  508  cd app-server/
+  509  ls
+  510  cd tasks/
+  511  ls
+  512  cat main.yml 
+  513  vi main.yml 
+  514  cd ../handlers/
+  515  vi main.yml 
+  516  cd ..
+  517  ls
+  518  cd ..
+  519  ls
+  520  cd haproxy/
+  521  ls
+  522  cd tasks/
+  523  ls
+  524  vi main.yml 
+  525  cd ..
+  526  ls
+  527  cd ..
+  528  ls
+  529  cd app-server/
+  530  ls
+  531  cd tasks/
+  532  ls
+  533  vi main.yml 
+  534  vi apache.yml
+  535  vi main.yml 
+  536  cd ../handlers/
+  537  vi main.yml 
+  538  cd ..
+  539  ls
+  540  cd ..
+  541  ls
+  542  cd postgresql/
+  543  ls
+  544  cd tasks/
+  545  ls
+  546  vi main.yml 
+  547  ls
+  548  cd ../..
+  549  ls
+  550  cd app-server/
+  551  cd tasks/
+  552  ls
+  553  vi main.yml 
+  554  ls
+  555  cd ..
+  556  ls
+  557  cd templates/
+  558  ls
+  559  cp /root/Git/bad-ansible/3tier-bad/index.html.j2 .
+  560  cp /root/Git/bad-ansible/3tier-bad/index.html.app1 .
+  561  ls
+  562  mv index.html.app1 index.html.app
+  563  ls
+  564  ll
+  565  cd ..ls
+  566  cd ..
+  567  ls
+  568  cd ..
+  569  ls
+  570  cd haproxy/
+  571  ls
+  572  cd templates/
+  573  ls
+  574  vi haproxy.cfg.j2 
+  575  cd ..
+  576  ls
+  577  cd ..
+  578  ls
+  579  cd ..
+  580  ls
+  581  vi site.yml 
+  582  ls
+  583  ansible-playbook site.yml --syntax-check
+  584  vi site.
+  585  vi site.yml 
+  586  cd roles/
+  587  ls
+  588  cd app-server/
+  589  ls
+  590  cd tasks/
+  591  ls
+  592  vi main.yml 
+  593  cd ../..
+  594  ls
+  595  cd ..
+  596  ls
+  597  ansible-playbook site.yml --syntax-check
+  598  ls
+  599  ansible-playbook site.yml --syntax-check
+  600  ansible-playbook site.yml --check
+  601  ansible-playbook site.yml 
+  602  ansible-playbook site.yml -e GUID={GUID}
+  603  ls
+  604  vi site.yml 
+  605  ansible-playbook site.yml -e GUID={GUID}
+  606  ls
+  607  cd ..
+  608  ls
+  609  cd ..
+  610  ls
+  611  cd ansible/
+  612  ls
+  613  git add .
+  614  git commit -m "running roles"
+  615  git push -u origin master
+  616  ls
+  617  cd good-playbooks/
+  618  ls
+  619  rm site.retry 
+  620  cd ..ls
+  621  cd ..
+  622  ls
+  623  git push -u origin master
+  624  git add .
+  625  git commit
+  626  git commit -a
+  627  git push -u origin master
+  628  history >> aa
