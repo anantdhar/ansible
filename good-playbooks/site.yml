@@ -1,4 +1,31 @@
-- hosts: apps
+#- name: Base configuration
+#  hosts: all
+#  gather_facts: false # remove later! speeds up testing
+#  become: yes
+#  roles:
+#    - base-config
+
+- name: deploy apache & tomcat
+  hosts: apps
+  gather_facts: true
   become: yes
   roles:
-    - haproxy 
+    - base-config
+    - app-server
+
+- name: deploy haproxy
+  hosts: frontends
+  gather_facts: true
+  become: yes
+  roles:
+    - base-config
+    - haproxy
+
+
+- name: deploy postgres
+  hosts: appdbs
+  gather_facts: true 
+  become: yes
+  roles:
+    - base-config
+    - geerlingguy.postgresql
