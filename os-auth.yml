@@ -1,0 +1,4 @@
+--- 
+ - name: Authenticate to the cloud and retrieve the service catalog
+    os_auth:
+      cloud: ospcloud
