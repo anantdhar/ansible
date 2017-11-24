@@ -1,0 +1,5 @@
+---
+- hosts: workstation-169c
+  gather_facts: false
+  tasks:
+    - name: ping
